@@ -1,4 +1,4 @@
-import area
+import shapes.area
 
-print(dir(area))
+print(dir(shapes.area))
 print(dir())
