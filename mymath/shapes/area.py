@@ -1,4 +1,4 @@
-from shapes import PI
+PI = 3.14
 
 def circle(radius):
     return radius * radius * PI

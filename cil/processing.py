@@ -1,4 +1,22 @@
-__all__ = ['invert', 'merge']
+
+#이미지 좌우 반전
+def horizontal_flip(img):
+    height, width = len(img), len(img[0])
+    new_img = empty_image(height, width)
+    for i in range(height):
+        for j in range(width):
+            new_img[i][j] = img[i][0-j-1]
+    return new_img
+
+
+#이미지 상하 반전
+def vertical_flip(img):
+    height, width = len(img), len(img[0])
+    new_img = empty_image(height, width)
+    for i in range(height):
+        for j in range(width):
+            new_img[i][j] = img[0-i-1][j]
+    return new_img
 
 # 이미지 색상 반전
 def invert(img):
